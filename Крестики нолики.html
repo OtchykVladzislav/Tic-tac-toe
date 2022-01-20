@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>Крестики-нолики</title>
+    <style>
+        #game{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            color: hotpink;
+            width: 42%;
+            padding: 10px;
+            background-color:aquamarine;;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+        }
+        .block{
+            font-size: 180px;
+            font-family: 'Times New Roman', Times, serif;
+            color: hotpink;
+            background-color: blanchedalmond;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            margin: 2px;
+            border-radius: 10%;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .button{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin: 20px;
+        }
+        button{
+            background-color: lightseagreen;
+            font-family: fantasy;
+            padding: 15px;
+            font-size: 22px;
+            outline: none;
+            border: none;
+        }
+    </style>
+</head>
+<body style="background-color: aquamarine;"> 
+    <div id="game">
+    </div>
+    <div class="button">
+        <button style="border-radius: 20px 0px 0px 20px;" onclick="Switch()">Смена</button>
+        <button style="border-radius: 0px 20px 20px 0px;" onclick="restart()">Заново</button>
+    </div>
+    <script src="Logic.js"></script>
+</body>
+</html>
